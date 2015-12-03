@@ -29,6 +29,7 @@ def f1(t):
     return all1
 
 
+
 def f2(l):
     res1 = []
     for k in l:
@@ -66,5 +67,10 @@ p = mlab.PCA(data, True)
 print(p.s)
 print(p.Wt)
 N = len(anna_data)
-plt.plot(p.Y[:N,0], p.Y[:N,1], 'og', p.Y[N:,0], p.Y[N:,1], 'sb')
+plt.plot(p.Y[:N, 0], p.Y[:N, 1], 'og', p.Y[N:, 0], p.Y[N:, 1], 'sb')
 plt.show()
+
+'''
+ОТВЕТ: да, при такой ^ комбинации признаков, один текст на 70% (визуально) находится слева, а другой -- справа
+'''
+
