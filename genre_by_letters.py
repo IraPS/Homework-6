@@ -11,6 +11,7 @@ corpus2 = open('c2.txt', 'r', encoding='utf-8')
 corpus1 = corpus1.read()
 corpus2 = corpus2.read()
 s1 = re.split(r'(?:[.]\s*){3}|[.?!]+', corpus1)
+print(s1)
 s2 = re.split(r'(?:[.]\s*){3}|[.?!]+', corpus2)
 if '' in s1:
     del s1[s1.index('')]
