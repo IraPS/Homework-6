@@ -15,10 +15,6 @@ corpus2 = open('outa.txt', 'r', encoding='utf-8')
 corpus2 = corpus2.read()
 outa = re.split(r'(?:[.]\s*){3}|[.?!]+', corpus2)
 
-corpus2 = open('outw.txt', 'r', encoding='utf-8')
-corpus2 = corpus2.read()
-outw = re.split(r'(?:[.]\s*){3}|[.?!]+', corpus2)
-
 
 def f1(t):
     all1 = []
@@ -62,9 +58,6 @@ def f2(l):
 
 dataa = f2(f1(outa))
 datas = f2(f1(outs))
-dataw = f2(f1(outw))
-
-
 
 def prep(c):
     corpus1 = open(c, 'r', encoding='utf-8')
